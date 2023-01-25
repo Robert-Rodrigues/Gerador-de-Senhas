@@ -28,9 +28,19 @@ body{
     flex-direction: column;
     animation: colors 15s ease infinite;
 }
+@media screen and (max-width: 768px){
+    body{
+        padding: 0 10px 0 10px;
+    }
+}
 h1{
     max-width: 550px;
     margin-bottom: 24px;
+}
+@media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+    }
 }
 .container-input{
     max-width: 480px;
@@ -38,6 +48,12 @@ h1{
 }
 .container-input span{
     font-size: 22px;
+}
+@media screen and (max-width: 768px){
+.container-input{
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
 }
 .slider{
     -webkit-appearance: none;
@@ -67,6 +83,12 @@ h1{
     flex-direction: column;
     cursor: pointer;
 }
+@media screen and (max-width: 768px){
+    .container-password .container-password:hover{
+            text-align: center;
+            padding: 0 20px 0 20px;
+        }
+    }
 .title{
     text-align: center;
     font-size: 22px;
