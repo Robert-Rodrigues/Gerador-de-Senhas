@@ -28,6 +28,7 @@ function generatePassword(){
     novaSenha = pass;
 
     navigator.clipboard.writeText(novaSenha);
+    
 }
 
 function copyPassword(){

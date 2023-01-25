@@ -19,7 +19,7 @@
 }
 body{
     background: linear-gradient(45deg, #03001C,#301E67,#5B8FB9);
-    background-size: 200% , 200%;
+    background-size: 300% , 300%, 300%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -83,12 +83,6 @@ h1{
     flex-direction: column;
     cursor: pointer;
 }
-@media screen and (max-width: 768px){
-    .container-password .container-password:hover{
-            text-align: center;
-            padding: 0 20px 0 20px;
-        }
-    }
 .title{
     text-align: center;
     font-size: 22px;
@@ -96,6 +90,7 @@ h1{
     margin-bottom: 8px;
 }
 .password{
+    font-size: 13px;
     height: 60px;
     background-color: rgba(0,0,0, 0.40);
     border-radius: 4px;
@@ -104,7 +99,7 @@ h1{
     align-items: center;
 }
 .password:hover{
-    transform: scale(1.05);
+    transform: none;
 }
 .tooltip{
     position: relative;
@@ -112,12 +107,20 @@ h1{
     padding: 6px 8px;
     background-color: rgba(0,0,0, 0.40);
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 6px;
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+@media screen and (max-width: 768px){
+    .tooltip{
+    visibility: visible;
+    font-size: 12px;
+    opacity: 100;
+    border-radius: 4px;
+        }
+    }
 .hide{
     display: none;
 }
